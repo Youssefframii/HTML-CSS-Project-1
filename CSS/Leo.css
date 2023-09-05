@@ -1,4 +1,7 @@
 /* Start global variables */
+:root {
+    --main-color: #10cab7;
+}
 
 /* End global variables */
 
@@ -110,7 +113,8 @@ body {
     min-width: 200px;
     top: calc(100% + 15px);
     display: none;
-    border-radius: 5%;
+    border-radius: 3%;
+    z-index: 13;
 }
 
 .header .links ul::before {
@@ -140,3 +144,37 @@ body {
 }
 
 /* End Header */
+
+/* Start Landing Section */
+
+.landing {
+    background-image: url(../Assets/pexels-photo-355747.jpeg);
+    background-size: cover;
+    height: calc(100vh - 80px);
+    position: relative;
+    z-index: 1;
+}
+
+.landing .intro-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.landing .intro-text h1 {
+    color: var(--main-color);
+    margin: 0;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.landing .intro-text p {
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+/* End Landing Section */
