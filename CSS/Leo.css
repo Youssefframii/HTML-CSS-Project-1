@@ -13,8 +13,6 @@ body {
     font-family: 'Work Sans', sans-serif;
 }
 
-/* End global rules */
-
 .parent {
     background-color: #eee;
 }
@@ -24,7 +22,6 @@ body {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #aaa;
 }
 
 /* Small */
@@ -47,3 +44,56 @@ body {
         width: 1170px;
     }
 }
+
+/* End global rules */
+
+/* Start Header */
+.header {
+    padding: 20px;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    width: 60px;
+}
+
+.header .links {
+    position: relative;
+}
+
+.header .links:hover .icon span:nth-child(2) {
+    width: 100%;
+}
+
+.header .links .icon {
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.header .links .icon span {
+    background-color: #333;
+    margin-bottom: 5px;
+    height: 2px;
+}
+
+.header .links .icon span:first-child {
+    width: 100%;
+}
+
+.header .links .icon span:nth-child(2) {
+    width: 60%;
+    transition: .3s;
+}
+
+.header .links .icon span:last-child {
+    width: 100%;
+}
+
+/* End Header */
