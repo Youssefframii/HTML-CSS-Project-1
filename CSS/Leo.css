@@ -364,3 +364,51 @@ img {
 }
 
 /* End Portfolio */
+
+/* Start About */
+
+.About {
+    padding-top: var(--section-padding);
+    padding-bottom: calc(var(--section-padding) + 0px);
+}
+
+.About-content {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.About-content .image {
+    position: relative;
+    width: 250px;
+    height: 375px;
+}
+.About-content .image img {
+    min-width: 100%;
+}
+
+.About-content .image::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: calc(100% + 80px);
+    background-color: #ebeced;
+    top: -40px;
+    left: -20px;
+    z-index: -1;
+}
+
+.About-content .image::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 260px;
+    border-left: 80px solid var(--main-color);
+    border-bottom: 80px solid var(--main-color);
+    right: -130px;
+    top: -40px;
+    z-index: -1;
+}
+
+/* End About */
